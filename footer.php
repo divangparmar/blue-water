@@ -79,14 +79,7 @@ $footer_google = get_field('header_google', 'option');
             </div>
             <div class="contact-content">
                <p><?php echo esc_html($footer_newsletter_text); ?></p>
-               <form>
-                  <div class="search d-flex">
-                     <input type="text" class="email" placeholder="Email" />
-                     <div class="box">
-                        <button><i class="fas fa-location-arrow"></i></button>
-                     </div>
-                  </div>
-               </form>
+               <?php echo do_shortcode('[contact-form-7 id="fc3f0b7" title="Footer news letter"]'); ?>
             </div>
          </div>
       </div>
@@ -102,9 +95,6 @@ $footer_google = get_field('header_google', 'option');
             <div class="footer-content">
                <?php if ($footer_copyright): ?>
                   <p><?php echo wp_kses_post($footer_copyright); ?></p>
-               <?php else: ?>
-                  <p>Copyright © <?php echo date('Y'); ?> <a href="#" target="_blank">YourCompany</a> All rights reserved.
-                  </p>
                <?php endif; ?>
             </div>
          </div>

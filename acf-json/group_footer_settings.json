@@ -1,0 +1,64 @@
+{
+    "key": "group_footer_settings",
+    "title": "Footer Settings",
+    "fields": [
+        {
+            "key": "field_footer_phone",
+            "label": "Footer Phone Number",
+            "name": "footer_phone",
+            "type": "text",
+            "instructions": "Leave blank to use header phone number"
+        },
+        {
+            "key": "field_footer_email",
+            "label": "Footer Email",
+            "name": "footer_email",
+            "type": "email",
+            "instructions": "Leave blank to use header email"
+        },
+        {
+            "key": "field_footer_hours_1",
+            "label": "Opening Hours Line 1",
+            "name": "footer_hours_1",
+            "type": "text"
+        },
+        {
+            "key": "field_footer_hours_2",
+            "label": "Opening Hours Line 2",
+            "name": "footer_hours_2",
+            "type": "text"
+        },
+        {
+            "key": "field_footer_newsletter_text",
+            "label": "Newsletter Text",
+            "name": "footer_newsletter_text",
+            "type": "textarea"
+        },
+        {
+            "key": "field_footer_copyright_text",
+            "label": "Copyright Text",
+            "name": "footer_copyright_text",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-options-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1700000000
+}

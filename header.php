@@ -13,7 +13,6 @@ $header_twitter = get_field('header_twitter', 'option');
 $header_instagram = get_field('header_instagram', 'option');
 $header_google = get_field('header_google', 'option');
 $header_logo = get_field('header_logo', 'option');
-$header_button_text = get_field('header_button_text', 'option');
 $header_button_link = get_field('header_button_link', 'option');
 ?>
 <!DOCTYPE html>
@@ -56,18 +55,21 @@ $header_button_link = get_field('header_button_link', 'option');
                <?php endif; ?>
 
                <div class="head-social-icon ml-auto">
-                  <?php if ($header_facebook): ?><a href="<?php echo esc_url($header_facebook); ?>" target="_blank"><i
-                           class="fab fa-facebook-f"></i></a><?php else: ?><a href="#" target="_blank"><i
-                           class="fab fa-facebook-f"></i></a><?php endif; ?>
-                  <?php if ($header_twitter): ?><a href="<?php echo esc_url($header_twitter); ?>" target="_blank"><i
-                           class="fab fa-twitter"></i></a><?php else: ?><a href="#" target="_blank"><i
-                           class="fab fa-twitter"></i></a><?php endif; ?>
-                  <?php if ($header_instagram): ?><a href="<?php echo esc_url($header_instagram); ?>" target="_blank"><i
-                           class="fab fa-instagram"></i></a><?php else: ?><a href="#" target="_blank"><i
-                           class="fab fa-instagram"></i></a><?php endif; ?>
-                  <?php if ($header_google): ?><a href="<?php echo esc_url($header_google); ?>" target="_blank"><i
-                           class="fab fa-google"></i></a><?php else: ?><a href="#" target="_blank"><i
-                           class="fab fa-google"></i></a><?php endif; ?>
+                  <?php if ($header_facebook): ?>
+                     <a href="<?= esc_url($header_facebook); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <?php endif; ?>
+
+                  <?php if ($header_twitter): ?>
+                     <a href="<?= esc_url($header_twitter); ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <?php endif; ?>
+
+                  <?php if ($header_instagram): ?>
+                     <a href="<?= esc_url($header_instagram); ?>" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <?php endif; ?>
+
+                  <?php if ($header_google): ?>
+                     <a href="<?= esc_url($header_google); ?>" target="_blank"><i class="fab fa-google"></i></a>
+                  <?php endif; ?>
                </div>
             </div>
          </div>
@@ -98,12 +100,10 @@ $header_button_link = get_field('header_button_link', 'option');
                ?>
             </div>
             <div class="header-btn">
-               <?php if ($header_button_text && $header_button_link): ?>
+               <?php if ($header_button_link): ?>
                   <a href="<?php echo esc_url($header_button_link['url']); ?>"
                      target="<?php echo esc_attr($header_button_link['target'] ? $header_button_link['target'] : '_self'); ?>"
-                     class="button"><?php echo esc_html($header_button_text); ?></a>
-               <?php else: ?>
-                  <a href="https://app.truebluewaterexchange.com/" target="_blank" class="button">ENTER WATER PLATFORM</a>
+                     class="button"><?php echo esc_html($header_button_link['title']); ?></a>
                <?php endif; ?>
             </div>
             <div class="mobile-btn bttn">
