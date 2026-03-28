@@ -35,3 +35,22 @@ function blue_water_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'blue_water_pingback_header' );
+
+/**
+ * Add Bootstrap classes to navigation menu.
+ */
+function blue_water_add_menu_link_class( $atts, $item, $args ) {
+    if ( property_exists( $args, 'theme_location' ) && $args->theme_location == 'menu-1' ) {
+        $atts['class'] = 'nav-link';
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'blue_water_add_menu_link_class', 1, 3 );
+
+function blue_water_add_menu_list_item_class( $classes, $item, $args ) {
+    if ( property_exists( $args, 'theme_location' ) && $args->theme_location == 'menu-1' ) {
+        $classes[] = 'nav-item';
+    }
+    return $classes;
+}
+add_filter( 'nav_menu_css_class', 'blue_water_add_menu_list_item_class', 1, 3 );
