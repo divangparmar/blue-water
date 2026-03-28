@@ -1,0 +1,73 @@
+{
+    "key": "group_block_services_section",
+    "title": "Block: Services Section",
+    "fields": [
+        {
+            "key": "field_services_subtitle",
+            "label": "Subtitle",
+            "name": "services_subtitle",
+            "type": "text",
+            "default_value": "What We Offer"
+        },
+        {
+            "key": "field_services_title",
+            "label": "Title",
+            "name": "services_title",
+            "type": "textarea",
+            "instructions": "Use <span>Text</span> to highlight part of the title.",
+            "default_value": "Our <span>Services</span>",
+            "rows": 2,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_services_items",
+            "label": "Services",
+            "name": "services_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Service",
+            "sub_fields": [
+                {
+                    "key": "field_service_icon_svg",
+                    "label": "Icon (SVG)",
+                    "name": "icon_svg",
+                    "type": "textarea",
+                    "instructions": "Paste raw SVG code here.",
+                    "rows": 3
+                },
+                {
+                    "key": "field_service_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_service_description",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "br"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/services-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1700000004
+}

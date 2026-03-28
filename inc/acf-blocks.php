@@ -58,6 +58,18 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('how', 'steps', 'process'),
 			'mode' => 'edit',
 		));
+
+		// Services Section Block
+		acf_register_block_type(array(
+			'name' => 'services-section',
+			'title' => __('Services Section'),
+			'description' => __('Services grid section block.'),
+			'render_template' => 'template-parts/blocks/block-services.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'grid-view',
+			'keywords' => array('services', 'products', 'grid'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');
