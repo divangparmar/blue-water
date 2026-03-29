@@ -24,3 +24,14 @@ Use it to make something cool, have fun, and share what you've learned.
 .navbar .current-menu-item a {
     color: #1b8cff;
 }
+
+.page-template-default p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}

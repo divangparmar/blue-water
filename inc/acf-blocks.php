@@ -177,6 +177,54 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('locations', 'maps', 'address'),
 			'mode' => 'edit',
 		));
+
+		// Why Partner Block
+		acf_register_block_type(array(
+			'name' => 'why-partner',
+			'title' => __('Why Partner Section'),
+			'description' => __('Why Partner With TB Water Exchange block.'),
+			'render_template' => 'template-parts/blocks/block-why-partner.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'awards',
+			'keywords' => array('partner', 'why', 'cards'),
+			'mode' => 'edit',
+		));
+
+		// Partner CTA Block
+		acf_register_block_type(array(
+			'name' => 'partner-cta',
+			'title' => __('Partner CTA Section'),
+			'description' => __('Help others access smarter water trading solutions block.'),
+			'render_template' => 'template-parts/blocks/block-partner-cta.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'megaphone',
+			'keywords' => array('partner', 'cta', 'sign up'),
+			'mode' => 'edit',
+		));
+
+		// Earn Commission Block
+		acf_register_block_type(array(
+			'name' => 'earn-commission',
+			'title' => __('Earn Commission Section'),
+			'description' => __('Earn Commission on Every Trade block.'),
+			'render_template' => 'template-parts/blocks/block-earn-commission.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'chart-line',
+			'keywords' => array('earn', 'commission', 'cards'),
+			'mode' => 'edit',
+		));
+
+		// Partner Logos Block
+		acf_register_block_type(array(
+			'name' => 'partner-logos',
+			'title' => __('Partner Logos Section'),
+			'description' => __('Partner logos display block.'),
+			'render_template' => 'template-parts/blocks/block-partner-logos.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'images-alt',
+			'keywords' => array('partner', 'logos', 'companies'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');

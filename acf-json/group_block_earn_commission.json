@@ -1,0 +1,114 @@
+{
+    "key": "group_block_earn_commission",
+    "title": "Block: Earn Commission Settings",
+    "fields": [
+        {
+            "key": "field_earn_commission_cards",
+            "label": "Cards",
+            "name": "cards",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "button_label": "Add Card",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_earn_commission_icon",
+                    "label": "Icon SVG",
+                    "name": "icon_svg",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "Paste raw SVG code here.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "rows": 5,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_earn_commission_cards"
+                },
+                {
+                    "key": "field_earn_commission_card_title",
+                    "label": "Card Title",
+                    "name": "card_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_earn_commission_cards"
+                },
+                {
+                    "key": "field_earn_commission_card_desc",
+                    "label": "Card Description",
+                    "name": "card_desc",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
+                    "rows": 5,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_earn_commission_cards"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/earn-commission"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1774797936
+}

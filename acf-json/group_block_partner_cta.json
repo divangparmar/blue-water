@@ -1,0 +1,39 @@
+{
+    "key": "group_block_partner_cta",
+    "title": "Block: Partner CTA",
+    "fields": [
+        {
+            "key": "field_partner_cta_title",
+            "label": "Title",
+            "name": "title",
+            "type": "textarea",
+            "default_value": "Help others access smarter water trading solutions - and earn rewards while you do it.",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_partner_cta_desc",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea",
+            "default_value": "Our Referral Partnership Program is designed for brokers, consultants, service providers, and community leaders who want to connect their network to a trusted, real-time water exchange platform. As a partner, you’ll receive everything you need to promote the TB Water Exchange with confidence and ease — plus earn commission on every successful trade you refer.",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_partner_cta_btn",
+            "label": "Button",
+            "name": "button",
+            "type": "link",
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/partner-cta"
+            }
+        ]
+    ],
+    "active": true
+}

@@ -1,0 +1,35 @@
+{
+    "key": "group_block_partner_logos",
+    "title": "Block: Partner Logos Settings",
+    "fields": [
+        {
+            "key": "field_partner_logos_repeater",
+            "label": "Logos",
+            "name": "logos",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Logo",
+            "sub_fields": [
+                {
+                    "key": "field_partner_logos_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/partner-logos"
+            }
+        ]
+    ],
+    "active": true
+}
