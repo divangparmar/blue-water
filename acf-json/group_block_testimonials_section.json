@@ -1,0 +1,97 @@
+{
+    "key": "group_block_testimonials_section",
+    "title": "Block: Testimonials Section",
+    "fields": [
+        {
+            "key": "field_testimonials_title_stars",
+            "label": "Top Stars (e.g. ★★★★★)",
+            "name": "testimonials_title_stars",
+            "type": "text",
+            "default_value": "★★★★★"
+        },
+        {
+            "key": "field_testimonials_title",
+            "label": "Main Title",
+            "name": "testimonials_title",
+            "type": "text",
+            "default_value": "Trusted by User"
+        },
+        {
+            "key": "field_testimonials_subtitle",
+            "label": "Subtitle",
+            "name": "testimonials_subtitle",
+            "type": "text",
+            "default_value": "4.8 average rating from 100+ reviews"
+        },
+        {
+            "key": "field_testimonials_items",
+            "label": "Reviews",
+            "name": "testimonials_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Review",
+            "sub_fields": [
+                {
+                    "key": "field_testimonial_stars",
+                    "label": "Stars Rating",
+                    "name": "stars",
+                    "type": "select",
+                    "choices": {
+                        "1": "1 Star (★)",
+                        "2": "2 Stars (★★)",
+                        "3": "3 Stars (★★★)",
+                        "4": "4 Stars (★★★★)",
+                        "5": "5 Stars (★★★★★)"
+                    },
+                    "default_value": "5",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_testimonial_review_text",
+                    "label": "Review Quote",
+                    "name": "review_text",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_testimonial_user_initials",
+                    "label": "User Initials (Avatar)",
+                    "name": "user_initials",
+                    "type": "text",
+                    "instructions": "Leave blank to auto-generate from the full name (e.g. 'JM')"
+                },
+                {
+                    "key": "field_testimonial_user_name",
+                    "label": "User Name",
+                    "name": "user_name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_testimonial_user_role",
+                    "label": "User Role / Location",
+                    "name": "user_role",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/testimonials-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1700000007
+}

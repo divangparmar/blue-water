@@ -1,0 +1,127 @@
+{
+    "key": "group_block_contact_section",
+    "title": "Block: Contact Section",
+    "fields": [
+        {
+            "key": "field_contact_subtitle",
+            "label": "Subtitle",
+            "name": "contact_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get in touch with us today.",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_contact_title",
+            "label": "Title",
+            "name": "contact_title",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 2,
+            "new_lines": "br",
+            "default_value": "Kickstart Your Water Strategy Talk to a Broker",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_contact_description",
+            "label": "Description",
+            "name": "contact_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "new_lines": "br",
+            "default_value": "Explore the Water Trading Centre today and get ahead with True Blue Water Exchange.",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_contact_form_shortcode",
+            "label": "Contact Form 7 Shortcode",
+            "name": "contact_form_shortcode",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Paste your [contact-form-7 id=\"...\"] shortcode here.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_contact_info",
+            "label": "Contact Info",
+            "name": "contact_info",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Email : info@tbwater.com.au <br> Phone : +61410468191",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/contact-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1774765071
+}

@@ -70,6 +70,30 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('services', 'products', 'grid'),
 			'mode' => 'edit',
 		));
+
+		// Testimonials Section Block
+		acf_register_block_type(array(
+			'name' => 'testimonials-section',
+			'title' => __('Testimonials Section'),
+			'description' => __('Testimonials and reviews block.'),
+			'render_template' => 'template-parts/blocks/block-testimonials.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'format-quote',
+			'keywords' => array('testimonials', 'reviews', 'ratings'),
+			'mode' => 'edit',
+		));
+
+		// Contact Section Block
+		acf_register_block_type(array(
+			'name' => 'contact-section',
+			'title' => __('Contact Section'),
+			'description' => __('Contact form and info block.'),
+			'render_template' => 'template-parts/blocks/block-contact.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'email-alt',
+			'keywords' => array('contact', 'form', 'touch'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');
