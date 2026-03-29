@@ -20,3 +20,7 @@ Use it to make something cool, have fun, and share what you've learned.
 .sec_a_textarea {
     width: 100%;
 }
+
+.navbar .current-menu-item a {
+    color: #1b8cff;
+}

@@ -1,0 +1,50 @@
+{
+    "key": "group_block_client_section",
+    "title": "Block: Client Logos Section",
+    "fields": [
+        {
+            "key": "field_client_title",
+            "label": "Title",
+            "name": "client_title",
+            "type": "text",
+            "default_value": "Worldwide Trusted Client"
+        },
+        {
+            "key": "field_client_logos",
+            "label": "Client Logos",
+            "name": "client_logos",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Add Logo",
+            "sub_fields": [
+                {
+                    "key": "field_client_logo_image",
+                    "label": "Logo Image",
+                    "name": "logo",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/client-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1700000009
+}

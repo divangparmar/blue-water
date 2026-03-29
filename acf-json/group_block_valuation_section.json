@@ -1,0 +1,132 @@
+{
+    "key": "group_block_valuation_section",
+    "title": "Block: Valuation Section",
+    "fields": [
+        {
+            "key": "field_valuation_image",
+            "label": "Left Graphic \/ Image",
+            "name": "valuation_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_valuation_title",
+            "label": "Title",
+            "name": "valuation_title",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 2,
+            "new_lines": "br",
+            "default_value": "Instant Valuation on your Water Entitlement",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_valuation_description",
+            "label": "Description",
+            "name": "valuation_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "new_lines": "br",
+            "default_value": "Get a fast, accurate estimate of your water asset’s market value—no waiting, no guesswork.",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_valuation_form_shortcode",
+            "label": "Contact Form 7 Shortcode",
+            "name": "valuation_form_shortcode",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Paste your [contact-form-7 id=\"...\"] shortcode here for the Valuation Form.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_valuation_contact_info",
+            "label": "Contact Info",
+            "name": "valuation_contact_info",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Email : info@tbwater.com.au <br> Phone : +61410468191",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/valuation-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1774769806
+}

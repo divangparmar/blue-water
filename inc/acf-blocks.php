@@ -94,6 +94,30 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('contact', 'form', 'touch'),
 			'mode' => 'edit',
 		));
+
+		// Valuation Section Block
+		acf_register_block_type(array(
+			'name' => 'valuation-section',
+			'title' => __('Valuation Section'),
+			'description' => __('Valuation form and info block.'),
+			'render_template' => 'template-parts/blocks/block-valuation.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'calculator',
+			'keywords' => array('valuation', 'form', 'estimate'),
+			'mode' => 'edit',
+		));
+
+		// Client Section Block
+		acf_register_block_type(array(
+			'name' => 'client-section',
+			'title' => __('Client Logos Section'),
+			'description' => __('Worldwide trusted client logos.'),
+			'render_template' => 'template-parts/blocks/block-client.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'images-alt2',
+			'keywords' => array('clients', 'logos', 'partners'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');
