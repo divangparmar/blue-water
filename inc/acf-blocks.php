@@ -225,6 +225,18 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('partner', 'logos', 'companies'),
 			'mode' => 'edit',
 		));
+
+		// Finance Allocation Block
+		acf_register_block_type(array(
+			'name' => 'finance-allocation',
+			'title' => __('Finance Allocation Section'),
+			'description' => __('Finance Temporary Allocation & Permanent Water Entitlements block.'),
+			'render_template' => 'template-parts/blocks/block-finance-allocation.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'portfolio',
+			'keywords' => array('finance', 'allocation', 'entitlements'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');

@@ -18,17 +18,21 @@ $button = get_field('button');
     <?php endif; ?>
 
     <div class="prt_sec2_grid">
-        <?php foreach ($cards as $card): ?>
-            <div class="prt_sec2_card">
-                <div class="prt_sec2_icon">
-                    <?php echo $card['icon_svg']; // SVG raw code ?>
+        <?php
+        if ($cards):
+            foreach ($cards as $card): ?>
+                <div class="prt_sec2_card">
+                    <div class="prt_sec2_icon">
+                        <?php echo $card['icon_svg']; // SVG raw code ?>
+                    </div>
+                    <div class="prt_sec2_card_title"><?php echo esc_html($card['card_title']); ?></div>
+                    <div class="prt_sec2_card_desc">
+                        <?php echo wp_kses_post($card['card_desc']); ?>
+                    </div>
                 </div>
-                <div class="prt_sec2_card_title"><?php echo esc_html($card['card_title']); ?></div>
-                <div class="prt_sec2_card_desc">
-                    <?php echo wp_kses_post($card['card_desc']); ?>
-                </div>
-            </div>
-        <?php endforeach; ?>
+                <?php
+            endforeach;
+        endif; ?>
     </div>
 
     <?php
@@ -40,10 +44,6 @@ $button = get_field('button');
         <div class="prt_sec2_btn_wrap">
             <a href="<?php echo esc_url($btn_url); ?>" target="<?php echo esc_attr($btn_target); ?>"
                 class="prt_sec2_btn"><?php echo esc_html($btn_title); ?></a>
-        </div>
-    <?php else: ?>
-        <div class="prt_sec2_btn_wrap">
-            <a href="#" class="prt_sec2_btn">Become a Partner</a>
         </div>
     <?php endif; ?>
 </section>
