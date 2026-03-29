@@ -129,6 +129,54 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('exchange', 'trade', 'stats'),
 			'mode' => 'edit',
 		));
+
+		// Banner Section Block
+		acf_register_block_type(array(
+			'name' => 'banner-section',
+			'title' => __('Banner Section'),
+			'description' => __('Page banner block.'),
+			'render_template' => 'template-parts/blocks/block-banner.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'cover-image',
+			'keywords' => array('banner', 'hero', 'page title'),
+			'mode' => 'edit',
+		));
+
+		// Team Section Block
+		acf_register_block_type(array(
+			'name' => 'team-section',
+			'title' => __('Team Section'),
+			'description' => __('Our Managing Board Team Section block.'),
+			'render_template' => 'template-parts/blocks/block-team.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'groups',
+			'keywords' => array('team', 'members', 'board'),
+			'mode' => 'edit',
+		));
+
+		// Australian Owned Block
+		acf_register_block_type(array(
+			'name' => 'australian-owned',
+			'title' => __('Australian Owned Section'),
+			'description' => __('Proudly 100% Australian-Owned and Operated block.'),
+			'render_template' => 'template-parts/blocks/block-australian-owned.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'admin-site',
+			'keywords' => array('australian', 'owned', 'about'),
+			'mode' => 'edit',
+		));
+
+		// Locations Section Block
+		acf_register_block_type(array(
+			'name' => 'locations-section',
+			'title' => __('Locations Section'),
+			'description' => __('Our Locations block with Maps.'),
+			'render_template' => 'template-parts/blocks/block-locations.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'location-alt',
+			'keywords' => array('locations', 'maps', 'address'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');

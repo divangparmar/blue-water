@@ -1,0 +1,61 @@
+{
+    "key": "group_block_locations_section",
+    "title": "Block: Locations Section",
+    "fields": [
+        {
+            "key": "field_loc_title",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "default_value": "Our Locations"
+        },
+        {
+            "key": "field_loc_desc",
+            "label": "Description",
+            "name": "description",
+            "type": "textarea",
+            "default_value": "With offices in two key regional hubs, we\u2019re deeply connected to the communities and industries that rely on efficient, transparent water trading. Our regional presence ensures we stay close to the source \u2014 understanding local needs, building relationships, and providing on-the-ground support. Whether you\u2019re trading online or want to speak with a local expert, our doors are always open.",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_loc_btn",
+            "label": "Button",
+            "name": "button",
+            "type": "link",
+            "return_format": "array"
+        },
+        {
+            "key": "field_loc_repeater",
+            "label": "Locations",
+            "name": "locations",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Add Location",
+            "sub_fields": [
+                {
+                    "key": "field_loc_rep_iframe",
+                    "label": "Google Maps iFrame HTML",
+                    "name": "iframe_html",
+                    "type": "textarea",
+                    "instructions": "Paste the fully generated Google Map iframe HTML code here."
+                },
+                {
+                    "key": "field_loc_rep_address",
+                    "label": "Address Text",
+                    "name": "address",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf/locations-section"
+            }
+        ]
+    ],
+    "active": true
+}

@@ -1,0 +1,123 @@
+{
+    "key": "group_block_australian_owned",
+    "title": "Block: Australian Owned",
+    "fields": [
+        {
+            "key": "field_au_left_title",
+            "label": "Left Title",
+            "name": "left_title",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Use <br> for line breaks.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Proudly 100% Australian-Owned <br> and Operated",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": 6,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_au_left_desc",
+            "label": "Left Description",
+            "name": "left_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We exist to provide tailored solutions that maximise opportunity,\nminimise risk, and drive success for every client we serve.\nWith real-time insights and expert brokerage services.",
+            "new_lines": "br",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
+        },
+        {
+            "key": "field_au_left_btn",
+            "label": "Left Button",
+            "name": "left_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_au_right_title",
+            "label": "Right Title",
+            "name": "right_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Real People, Real Results",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_au_right_desc",
+            "label": "Right Description",
+            "name": "right_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our team is made up of passionate, experienced water brokers who are\ndedicated to delivering the best outcomes for every client.\nWe combine technical knowledge with a relationship-first approach.",
+            "new_lines": "br",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/australian-owned"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1774774323
+}
