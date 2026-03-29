@@ -94,7 +94,7 @@ $footer_google = get_field('header_google', 'option');
          <div class="col-lg-6 col-md-6">
             <div class="footer-content">
                <?php if ($footer_copyright): ?>
-                  <p><?php echo wp_kses_post($footer_copyright); ?></p>
+                  <?php echo wp_kses_post($footer_copyright); ?>
                <?php endif; ?>
             </div>
          </div>

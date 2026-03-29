@@ -118,6 +118,17 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('clients', 'logos', 'partners'),
 			'mode' => 'edit',
 		));
+		// Exchange Section Block
+		acf_register_block_type(array(
+			'name' => 'exchange-section',
+			'title' => __('Exchange Section'),
+			'description' => __('True Blue Water Exchange block.'),
+			'render_template' => 'template-parts/blocks/block-exchange.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'money-alt',
+			'keywords' => array('exchange', 'trade', 'stats'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');
