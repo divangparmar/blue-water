@@ -237,6 +237,18 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('finance', 'allocation', 'entitlements'),
 			'mode' => 'edit',
 		));
+
+		// Why Use TB Water Exchange Block
+		acf_register_block_type(array(
+			'name' => 'why-use-tb',
+			'title' => __('Why Use TB Section'),
+			'description' => __('Why Use the TB Water Exchange block.'),
+			'render_template' => 'template-parts/blocks/block-why-use-tb.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'testimonial',
+			'keywords' => array('tb water', 'why use tb', 'platform'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');

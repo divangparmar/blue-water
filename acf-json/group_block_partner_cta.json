@@ -3,26 +3,97 @@
     "title": "Block: Partner CTA",
     "fields": [
         {
+            "key": "field_69c94de56bac9",
+            "label": "Text Type",
+            "name": "text_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": [
+                "Title + Text",
+                "Text Only"
+            ],
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
             "key": "field_partner_cta_title",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "default_value": "Help others access smarter water trading solutions - and earn rewards while you do it.",
-            "new_lines": "br"
+            "new_lines": "br",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
         },
         {
             "key": "field_partner_cta_desc",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
             "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_69c94de56bac9",
+                        "operator": "==",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "default_value": "Our Referral Partnership Program is designed for brokers, consultants, service providers, and community leaders who want to connect their network to a trusted, real-time water exchange platform. As a partner, you’ll receive everything you need to promote the TB Water Exchange with confidence and ease — plus earn commission on every successful trade you refer.",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "rows": "",
+            "placeholder": "",
             "new_lines": "br"
         },
         {
             "key": "field_partner_cta_btn",
             "label": "Button",
             "name": "button",
+            "aria-label": "",
             "type": "link",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "return_format": "array"
         }
     ],
@@ -31,9 +102,19 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf/partner-cta"
+                "value": "acf\/partner-cta"
             }
         ]
     ],
-    "active": true
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1774847133
 }

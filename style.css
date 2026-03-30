@@ -35,3 +35,12 @@ Use it to make something cool, have fun, and share what you've learned.
 .mt-70 {
     margin-top: 70px;
 }
+
+.sec_a_submit_btn {
+    width: max-content;
+    margin-bottom: 0px;
+}
+
+.tb_1_title {
+    color: #FFF;
+}
