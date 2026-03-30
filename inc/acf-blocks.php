@@ -273,6 +273,18 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('video', 'popups', 'grid', 'cards'),
 			'mode' => 'edit',
 		));
+
+		// Resources Grid Block
+		acf_register_block_type(array(
+			'name' => 'resources-grid',
+			'title' => __('Resources Grid Section'),
+			'description' => __('Downloadable resources and forms grid.'),
+			'render_template' => 'template-parts/blocks/block-resources-grid.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'media-document',
+			'keywords' => array('resources', 'forms', 'downloads', 'pdf'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');
