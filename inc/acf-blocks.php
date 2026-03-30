@@ -249,6 +249,30 @@ function blue_water_register_acf_blocks()
 			'keywords' => array('tb water', 'why use tb', 'platform'),
 			'mode' => 'edit',
 		));
+
+		// Main Video Block
+		acf_register_block_type(array(
+			'name' => 'main-video',
+			'title' => __('Main Video Section'),
+			'description' => __('Large single main video block.'),
+			'render_template' => 'template-parts/blocks/block-main-video.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'video-alt3',
+			'keywords' => array('video', 'main', 'player'),
+			'mode' => 'edit',
+		));
+
+		// Video Popups Grid Block
+		acf_register_block_type(array(
+			'name' => 'video-popups',
+			'title' => __('Video Popups Section'),
+			'description' => __('Grid containing video popup cards.'),
+			'render_template' => 'template-parts/blocks/block-video-popups.php',
+			'category' => 'bluewater-blocks',
+			'icon' => 'media-video',
+			'keywords' => array('video', 'popups', 'grid', 'cards'),
+			'mode' => 'edit',
+		));
 	}
 }
 add_action('acf/init', 'blue_water_register_acf_blocks');
