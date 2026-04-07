@@ -133,18 +133,19 @@
         {
             "key": "field_how_trade_link",
             "label": "Trade Link \/ Button",
-            "name": "trade_link",
+            "name": "trade_link_1",
             "aria-label": "",
             "type": "link",
             "instructions": "",
-            "required": false,
-            "conditional_logic": false,
+            "required": 0,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "return_format": "array",
+            "allow_in_bindings": 1
         }
     ],
     "location": [
@@ -166,5 +167,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1774693960
+    "modified": 1775147380
 }

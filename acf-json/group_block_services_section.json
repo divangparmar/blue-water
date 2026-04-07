@@ -6,48 +6,152 @@
             "key": "field_services_subtitle",
             "label": "Subtitle",
             "name": "services_subtitle",
+            "aria-label": "",
             "type": "text",
-            "default_value": "What We Offer"
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "What We Offer",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_services_title",
             "label": "Title",
             "name": "services_title",
+            "aria-label": "",
             "type": "textarea",
-            "instructions": "Use <span>Text</span> to highlight part of the title.",
-            "default_value": "Our <span>Services</span>",
+            "instructions": "Use <span>Text<\/span> to highlight part of the title.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Our <span>Services<\/span>",
             "rows": 2,
-            "new_lines": "br"
+            "new_lines": "br",
+            "maxlength": "",
+            "placeholder": ""
         },
         {
             "key": "field_services_items",
             "label": "Services",
             "name": "services_items",
+            "aria-label": "",
             "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "row",
             "button_label": "Add Service",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "collapsed": "",
             "sub_fields": [
                 {
                     "key": "field_service_icon_svg",
                     "label": "Icon (SVG)",
                     "name": "icon_svg",
+                    "aria-label": "",
                     "type": "textarea",
                     "instructions": "Paste raw SVG code here.",
-                    "rows": 3
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "rows": 3,
+                    "default_value": "",
+                    "new_lines": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_services_items"
                 },
                 {
                     "key": "field_service_title",
                     "label": "Title",
                     "name": "title",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_services_items"
                 },
                 {
                     "key": "field_service_description",
                     "label": "Description",
                     "name": "description",
+                    "aria-label": "",
                     "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "rows": 3,
-                    "new_lines": "br"
+                    "new_lines": "br",
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_services_items"
+                },
+                {
+                    "key": "field_69d0bb89fc661",
+                    "label": "Background Image",
+                    "name": "bg_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium",
+                    "parent_repeater": "field_services_items"
                 }
             ]
         }
@@ -57,7 +161,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf/services-section"
+                "value": "acf\/services-section"
             }
         ]
     ],
@@ -69,5 +173,7 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1700000004
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1775287201
 }
