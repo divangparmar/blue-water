@@ -302,7 +302,27 @@
 
 
 
+    // Table Slider Carousel
+    $(document).ready(function(){
+       $('.tbl_slid_carousel').owlCarousel({
+         loop: true,
+         margin: 15,
+         nav: true,
+         dots: true,
+         autoplay: true,
+         autoplayTimeout: 2500,
+         responsive: {
+           0: {
+             items: 1
+           },
+           600: {
+             items: 1
+           },
+           1000: {
+             items: 1
+           }
+         }
+       });
+    });
+
 })(jQuery);
-
-
-
